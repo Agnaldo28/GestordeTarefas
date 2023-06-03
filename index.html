@@ -21,7 +21,7 @@
         <header>
             <h1>GESTOR DE TAREFAS</h1>
         </header>
-        <form id="todo-form" action="">
+        <form id="todo-form">
             <p>Adicione a sua tarefa:</p>
             <div class="form-control">
                 <input type="text" placeholder="O que você vai fazer?">
@@ -31,7 +31,7 @@
             </div>
         </form>
 
-        <form action="">
+        <form id="edit-form">
             <p>Edite sua tarefa</p>
             <div class="form-form-control">
                 <input type="text" id="edit-input">
@@ -39,7 +39,7 @@
                     <i class="fa-solid fa-check-double"></i>
                 </button>
             </div>
-            <button id="cancel'edit'btn">Cancelar</button>
+            <button id="cancel-edit-btn">Cancelar</button>
         </form>
 
         <div id="toolbar">
@@ -60,6 +60,7 @@
                     <option value="todo">A Fazer</option>
                 </select>
             </div>
+        </div>    
             <div id="todo-list">
                 <div class="todo">
                     <h3>Estou fazendo alguma coisa...</h3>
@@ -75,13 +76,13 @@
                 </div>
                 <div class="todo">
                     <h3>Estodar React  </h3>
-                    <button class="finish-todo">
+                    <button class="btn btn-success">
                         <i class="fa-solid fa-check"></i>
                     </button>
-                    <button class="edit-todo">
+                    <button class="btn btn-warning">
                         <i class="fa-solid fa-pen"></i>
                     </button>
-                    <button class="remove-todo">
+                    <button class="btn btn-danger">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
